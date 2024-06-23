@@ -2,25 +2,32 @@
   "name": "svhdl_back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeDxYk594/SVHDL_back.git"
+    "url": "git+https://github.com/AAOleynikov/SVHDL_back.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DeDxYk594/SVHDL_back/issues"
+    "url": "https://github.com/AAOleynikov/SVHDL_back/issues"
   },
-  "homepage": "https://github.com/DeDxYk594/SVHDL_back#readme",
+  "homepage": "https://github.com/AAOleynikov/SVHDL_back#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "ts-node-dev": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.8",
+    "typescript": "^5.5.2"
+  }
 }
