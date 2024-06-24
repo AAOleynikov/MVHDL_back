@@ -5,11 +5,10 @@ import { ValidationResult, validateProject, Project, simulate } from "./svhdl";
 import * as fs from "fs";
 import { chdir } from "process";
 import { exec } from "child_process";
-import cors from "cors"
-
+import cors from "cors";
 
 exec(`rm -r run/*`);
-chdir("run")
+chdir("run");
 
 dotenv.config();
 
@@ -20,7 +19,7 @@ if (port === undefined) {
   port = "3000";
 }
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Server is working!");
